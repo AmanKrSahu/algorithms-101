@@ -4,20 +4,20 @@ using namespace std;
 
 class Solution {
 public:
-    """
+    /*
     Q. Count the number of digits in a number.
-    """
+    */
 
     int countDigits(int num) {
         int ans = (int)log10(num) + 1;
         return ans;
     }
 
-    """
+    /*
     Q. Reverse a number (both positive and negative). (LEETCODE: 7)
 
     > Constraints: -2^31 <= x <= 2^31 - 1
-    """
+    */
 
     int reverseNumber(int num) {
         int ans = 0;
@@ -35,9 +35,9 @@ public:
         return ans;
     }
 
-    """
+    /*
     Q. Check if a number is a palindrome. (LEETCODE: 9)
-    """
+    */
 
     bool checkPalindrome(int num) {
         if (num < 0 || (num%10 == 0 && num != 0)) return false;
